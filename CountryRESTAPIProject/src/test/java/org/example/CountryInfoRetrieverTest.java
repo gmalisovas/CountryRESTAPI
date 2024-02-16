@@ -1,10 +1,7 @@
 package org.example;
 
-import com.google.gson.Gson;
-import org.assertj.core.api.Assertions;
 import org.example.controller.*;
 import org.example.model.*;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
@@ -12,8 +9,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
-
-import static junit.framework.TestCase.assertTrue;
 
 
 @ExtendWith(MockitoExtension.class)
@@ -24,11 +19,7 @@ public class CountryInfoRetrieverTest {
 	public void TestGetAllCountries() {
 		CountriesInfoService test = new CountriesInfoService();
 		List<Country> countries = test.getAllCountries();
-		//countries.forEach(System.out::println);
-		for(Country country : countries)
-		{
-			System.out.println(country.toString());
-		}
+		countries.forEach(System.out::println);
 	}
 	
 	@Test
