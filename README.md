@@ -22,3 +22,12 @@ Java Project constructed on 2 parts, that uses a REST API to get country data an
 >            <version>4.13.2</version>
 >            <scope>test</scope>
 >        </dependency>
+
+<h1>Maven Coordinates</h1>
+To add this library as a dependency add the following maven coordinates into your pom.xml file
+
+>	  <dependency>
+>        <groupId>org.example</groupId>
+>        <artifactId>CountryRESTAPIProject</artifactId>
+>        <version>0.0.1-SNAPSHOT</version>
+>     </dependency>
