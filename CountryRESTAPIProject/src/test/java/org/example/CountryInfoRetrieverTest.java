@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.controller.*;
 import org.example.model.*;
+import org.junit.Assert;
+import org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
@@ -27,6 +29,8 @@ public class CountryInfoRetrieverTest {
 		CountriesInfoService test = new CountriesInfoService();
 		List<Country> countries = test.getCountryByName("greece");
 		countries.forEach(System.out::println);
+		Assert.assertTrue(countries.size() == 1);
+		Assert.assertTrue(countries.get(0).getName().getCommon().equals("Greece"));
 	}
 	
 	@Test
@@ -34,6 +38,7 @@ public class CountryInfoRetrieverTest {
 		CountriesInfoService test = new CountriesInfoService();
 		List<Country> countries = test.getCountriesByLanguage("greek");
 		countries.forEach(System.out::println);
+		Assert.assertTrue(countries.size() == 2);
 	}
 	
 	@Test

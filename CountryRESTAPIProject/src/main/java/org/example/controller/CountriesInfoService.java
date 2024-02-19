@@ -7,7 +7,6 @@ import org.example.model.Countries;
 
 import com.google.gson.Gson;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -46,7 +45,7 @@ public class CountriesInfoService {
 		                while ((line = reader.readLine()) != null) { // ΟΣΟ ΥΠΑΡΧΟΥΝ ΓΡΑΜΜΕΣ ΓΙΑ ΝΑ ΔΙΑΒΑΣΤΟΥΝ
 		                    response.append(line); // ΤΟΠΟΘΕΤΟΥΝΤΑΙ ΣΤΟ RESPONSE
 		                }
-		                reader.close(); // ΚΛΕΙΝΩ ΤΟ RESPONSE
+		                reader.close(); // ΚΛΕΙΝΩ ΤΟ READER
 		                response.append("}");
 		                
 		                // ΤΟ RESPONSE ΓΙΝΕΤΑΙ DESERIALIATION ΑΠΟ JSON ΚΑΙ ΜΕΤΑΤΡΕΠΕΤΑΙ ΣΕ ΑΝΤΙΚΕΙΜΕΝΑ ΤΗΣ ΚΛΑΣΗΣ COUNTRIES 
