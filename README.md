@@ -31,4 +31,7 @@ To add this library as a dependency add the following maven coordinates into you
 >        <artifactId>CountryRESTAPIProject</artifactId>
 >        <version>0.0.1-SNAPSHOT</version>
 >     </dependency>
+
 # CountriesApp
+An Application to utilize the .jar library i constructed in the 1st part of the project
+
