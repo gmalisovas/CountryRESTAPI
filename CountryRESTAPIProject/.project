@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
-	<name>CountriesApp</name>
-=======
-	<name>CountryRESTAPI</name>
->>>>>>> cf35fe7fc6db9fcfa34df56c38ea01af84617651
+	<name>CountryRESTAPIProject</name>
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
-<<<<<<< HEAD
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
@@ -24,9 +19,5 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
-=======
-	</buildSpec>
-	<natures>
->>>>>>> cf35fe7fc6db9fcfa34df56c38ea01af84617651
 	</natures>
 </projectDescription>
